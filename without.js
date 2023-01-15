@@ -16,7 +16,7 @@ const assertArraysEqual = (Arr1, Arr2) => {
 const without = (sourceArr, itemsToRemove) => {
   let newArr = sourceArr
   newArr = newArr.filter(item => !itemsToRemove.includes(item))
-  console.log(newArr)
+  return newArr
 }
 
 const words = ['hello', 'world', 'lighthouse']
