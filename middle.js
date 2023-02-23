@@ -11,3 +11,5 @@ const middle = arr => {
     console.log(newArr)
   }
 }
+
+module.exports = middle

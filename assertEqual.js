@@ -5,8 +5,9 @@ const assertEqual = function (actual, expected) {
   } else console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`)
 }
 
+module.exports = assertEqual
 // Test code
-assertEqual('UofC', 'Bootcamp')
-assertEqual('Moneer', 'Moneer')
-assertEqual(1, 1)
-assertEqual(1, -1)
+// assertEqual('UofC', 'Bootcamp')
+// assertEqual('Moneer', 'Moneer')
+// assertEqual(1, 1)
+// assertEqual(1, -1)

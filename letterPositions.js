@@ -9,3 +9,5 @@ const letterPositions = (str) => {
   }
   console.log(results)
 }
+
+module.exports = letterPositions

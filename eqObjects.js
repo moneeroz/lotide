@@ -1,12 +1,5 @@
 
-const eqArrays = (arr1, arr2) => {
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1.length !== arr2.length || arr1[i] !== arr2[i]) {
-      return false
-    }
-  }
-  return true
-}
+const eqArrays = require('./eqArrays')
 const assertEqual = function (actual, expected) {
   if (actual === expected) {
     console.log(`🟢🟢🟢 Assertion Passed: ${actual} === ${expected}`)
@@ -41,3 +34,5 @@ assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true
 
 const longSleeveMultiColorShirtObject = { size: 'medium', colors: ['red', 'blue'], sleeveLength: 'long' }
 assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false) // => false
+
+module.exports = eqObjects
